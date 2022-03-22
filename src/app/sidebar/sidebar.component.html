@@ -1,0 +1,86 @@
+<div id="sidebar">
+    <div class="d-flex sidebar__brand">
+      <div class="p-2 align-self-center sidebar-icon__close">
+        <i class="fa fa-expand fs-sm" (click)="closeNav()"></i>
+      </div>
+      <div class="d-flex mr-auto">
+           <span class="p-2 logo-panel">
+              <img src="assets/images/stack-icon.png" class="img-fluid sidebar__brand-logo" alt="pj-logo"/>
+            </span>
+            <span class="p-2 align-self-center">
+                <h6>PJ</h6>
+            </span>
+      </div>
+       <div class="p-2 align-self-center sidebar-icon">
+            <i class="fa fa-compress" (click)="openNav()"></i>
+       </div>
+    </div>
+    <div class="mt-4">
+         <ul class="nav-items p-0">
+             <li routerLinkActive="active" [routerLink]="['/dashboard']">
+                 <a>
+                   <i class="fa fa-dashboard"></i>&nbsp; 
+                   <span>Dashboard</span> 
+                 </a>
+             </li>
+             <li routerLinkActive="active" [routerLink]="['/analytics']">
+                 <a>
+                     <i class="fa fa-bar-chart"></i>&nbsp; 
+                     <span>Analytics</span> 
+                 </a>
+             </li>
+             <li routerLinkActive="active" [routerLink]="['/projects']">
+                 <a>
+                     <i class="fa fa-briefcase"></i>&nbsp;
+                     <span>Projects</span>
+                 </a>
+             </li>
+             <li routerLinkActive="active" [routerLink]="['/tracking']">
+                 <a>
+                     <i class="fa fa-clock-o"></i>&nbsp; 
+                     <span>Tracking</span>
+                 </a>
+             </li>
+             <li routerLinkActive="active" [routerLink]="['/history']">
+                <a>
+                    <i class="fa fa-history"></i>&nbsp; 
+                    <span>History</span>
+                </a>
+              </li>
+              <li routerLinkActive="active" [routerLink]="['/settings']">
+                <a>
+                    <i class="fa fa-gear"></i>&nbsp; 
+                    <span>Settings</span>
+                </a>
+            </li>
+         </ul>
+
+         <div class="task-border p-2 d-flex justify-content-between">
+           <span class="p-2 text-region">
+              <h6>
+              Create <br />
+              new task
+            </h6>
+           </span>
+           <span class="p-2 align-self-center">
+             <i class="fa fa-plus-circle active fs-lg"></i>
+           </span>
+         </div>
+    </div>
+
+    <div class="bottom-layer">
+          <div class="d-flex mr-auto">
+                <span class="p-2">
+                  <img src="assets/images/stack-icon.png" class="img-fluid bottom-layer__logo" alt="user-logo"/>
+                </span>
+                <span class="p-2 align-self-center bottom-text">
+                    <span>Finna A</span> <br />
+                    <small class="text-muted">finna@iksg.com</small>
+                </span>
+          </div>
+          <div class="p-2 align-self-center bottom-icon">
+                <i class="fa fa-angle-up"></i>
+          </div>
+      </div>
+
+  </div>

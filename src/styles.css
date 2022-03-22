@@ -1,1 +1,193 @@
 /* You can add global styles to this file, and also import other style files */
+/* sidebar */
+@font-face {
+    font-family: "Work Bold";
+    src: url("assets/fonts/Work_Sans/static/WorkSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Work Light";
+    src: url("assets/fonts/Work_Sans/static/WorkSans-Light.ttf");
+}
+@font-face {
+    font-family: "Work Regular";
+    src: url("assets/fonts/Work_Sans/static/WorkSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Work Medium";
+    src: url("assets/fonts/Work_Sans/static/WorkSans-Medium.ttf");
+}
+
+h1,h2,h3,h4,h5,h6, strong{
+    font-family: "Work Bold" !important;
+}
+a,button{
+    font-family: "Work Medium" !important;
+}
+small{
+    font-family: "Work Light" !important;
+}
+body, p{
+    font-family: "Work Regular" !important;
+}
+.compressed__view .page-wrapper{
+    padding-left: 70px !important;
+}
+#sidebar{
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 240px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color:#FCFCFC;
+    z-index: 1000;
+}
+.sidebar-icon__close{
+    display: none
+}
+.nav-items{
+    color: #485166;
+    margin-left: 1rem;
+    position: relative;
+}
+.nav-items li {
+    list-style: none;
+    padding: 0.75rem 1rem;
+    transition: all 0.1s ease-in-out;
+}
+.nav-items li:hover{
+    color: #1B5AFD;
+    font-weight: bold;
+}
+li a{
+    cursor: pointer;
+}
+.active{
+    color: #1B5AFD;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.sidebar__brand-logo{
+    width: 50px;
+}
+.fs-lg{
+    font-size: 2rem
+}
+.fs-sm{
+    font-size: 1rem;
+}
+.bg-purple{
+    color: #090738;
+}
+
+.sidebar__compressed{
+    width: 70px !important;
+}
+
+.sidebar__compressed .sidebar-icon{
+    display: none;
+}
+.sidebar__compressed .nav-items{
+    margin-left: 0.2rem;
+    text-align: center;
+}
+.sidebar__compressed .logo-panel{
+    display: none !important
+}
+.sidebar__compressed .nav-items span{
+    display: none;
+}
+/* .sidebar__compressed .nav-items li{
+    padding-bottom: 0.5rem;
+} */
+.sidebar__compressed .task-border .text-region{
+    display: none;
+}
+.sidebar__compressed .task-border{
+    margin: 0 !important;
+}
+.sidebar__compressed .bottom-layer{
+    padding: 7px;
+    background-color: gainsboro;
+}
+ 
+.sidebar__brand{
+    padding: 1rem;
+}
+.sidebar__compressed .sidebar__brand {
+    padding-left: 0.2rem;
+} 
+
+.sidebar__compressed .bottom-layer .bottom-text,.sidebar__compressed .bottom-layer .bottom-icon{
+    display: none !important;
+}
+
+.sidebar__compressed .sidebar-icon__close{
+    display: block;
+}
+
+.task-border{
+    background-color: #EDF1FB;
+    color: #485166;
+    border-radius: 10px;
+    margin: 2rem;
+}
+.bottom-layer{
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    padding: 1rem;
+}
+.bottom-layer__logo{
+    width: 40px;
+}
+
+
+.page-wrapper{
+    padding-left: 240px;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #FFFFFF;
+    transition: all 0.5s ease-in;
+}
+.page-wrapper__content{
+    background-color: #FFFFFF;
+    padding: 2rem;
+    min-height: 100vh;
+}
+.progress{
+    height: 0.5rem;
+}
+.border-dashed{
+    border: dashed 1px #B2B2B2;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+.img-rounded{
+    border-radius: 50%;
+    height: 50px;
+}
+.pos-relative 
+{
+    position: relative;
+}
+.pos-r__R2rem{
+    right: 2rem;
+}
+.pos-r__R4rem{
+    right: 4rem;
+}
+/* @media screen and (min-width: 480px) {
+    #leftsidebar {width: 200px; float: left;}
+    #main {margin-left: 216px;}
+  } */
+
+
+  
