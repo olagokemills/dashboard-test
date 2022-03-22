@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
 import * as moment from 'moment';
 import { Users } from './data'
-declare var $: any;
 
 export interface pbar {
   start: number;
@@ -115,7 +114,6 @@ export class HomeComponent implements OnInit {
   async getName(a: number, b: number, c: number) {
     this.DaysArray.forEach((element) => {
       let name = new Date(a, b, element+1).toUTCString();
-      console.log(name)
       this.DayNameArray.push(name.slice(0, 1));
     });
   }
@@ -166,7 +164,6 @@ export class HomeComponent implements OnInit {
   returnActive(data:any)
   {
     let day = this.dt.date();
-    console.log(day)
     if(data ===this.today)
     {
       return 'active-date'
