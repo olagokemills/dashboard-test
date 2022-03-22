@@ -13,7 +13,6 @@ export class SidebarComponent implements OnInit {
   }
 
   openNav() {
-
     $('#sidebar').toggleClass('sidebar__compressed')  
     $('.main').toggleClass('compressed__view')    
     }
